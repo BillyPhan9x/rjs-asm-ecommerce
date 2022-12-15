@@ -1,0 +1,87 @@
+/* banner */
+
+.hero {
+  min-height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* section category list item */
+.category__title {
+  text-transform: uppercase;
+}
+
+.category__title p {
+  font-size: 1.4rem;
+  color: var(--small-text-color);
+}
+
+.category__item img {
+  transition: all 0.3s ease;
+}
+
+.category__item:hover img {
+  opacity: 0.6;
+}
+
+/* top trending product */
+.trending__title {
+  text-transform: uppercase;
+}
+
+.trending__title p {
+  font-size: 1.4rem;
+  color: var(--small-text-color);
+}
+
+.trending__product h6 {
+  font-weight: 600;
+}
+
+.trending__product p {
+  color: var(--small-text-color);
+  font-size: 1rem;
+}
+
+.trending__product img {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.trending__product img:hover {
+  opacity: 0.6;
+  transform: scale(0.9);
+}
+
+/* other infomation */
+.other__infomation {
+  padding: 20px 0px;
+}
+
+.other__infomation h6 {
+  font-size: 1.7rem;
+}
+
+.other__infomation p {
+  font-size: 1.2rem;
+  color: var(--small-text-color);
+}
+
+@media only screen and (max-width: 540px) {
+  .hero {
+    min-height: 20rem;
+  }
+
+  .category__item img {
+    height: 250px;
+  }
+
+  .trending {
+    padding: 0;
+  }
+
+  .trending__product img {
+    height: 300px;
+    object-fit: contain;
+  }
+}

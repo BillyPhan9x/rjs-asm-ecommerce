@@ -1,0 +1,147 @@
+.header {
+  width: 100%;
+  height: 60px;
+  line-height: 70px;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navbar-brand h1 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* navlink active color */
+.nav__active {
+  color: #fcb66b;
+  font-weight: 500;
+}
+
+/* menu ul display */
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2.7rem;
+  margin-bottom: 0;
+}
+
+.menu__left {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+
+.menu__right {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav-item a {
+  margin: 0 1rem;
+  font-size: 18px;
+}
+
+.nav-item a:hover {
+  color: #fcb66b !important;
+}
+
+/* menu icon */
+.mobile__menu {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  display: none;
+}
+
+/* --------------------------- */
+@media only screen and (max-width: 992px) {
+  .navbar-brand {
+    top: 100%;
+    left: 8%;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.53);
+    z-index: 999;
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background: #fff;
+  }
+
+  .menu__left {
+    flex-direction: column;
+    margin-top: 40px;
+    padding-left: 70px;
+  }
+
+  .menu__right {
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 0;
+  }
+
+  .header .container .row {
+    max-width: 95%;
+    margin: auto;
+  }
+
+  .active__menu {
+    display: block;
+  }
+
+  .mobile__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+
+  .mobile__menu span i {
+    font-size: 1.3rem !important;
+    border: 1px solid gray;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    left: 11%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .navbar-brand {
+    left: 15%;
+  }
+}

@@ -1,0 +1,133 @@
+.detail__images img {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.detail__images img:hover {
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+.detail__images img:last-child:hover {
+  transform: scale(1);
+  opacity: 0.9;
+}
+
+/* col right  */
+.detail__info h1 {
+  font-size: 2.5rem;
+}
+
+.detail__info p {
+  font-size: 1.5rem;
+}
+
+.detail__info .detail__info-desc {
+  font-size: 1.19rem;
+  margin: 1rem 0;
+}
+
+.detail__quantity {
+  font: -webkit-small-control;
+  height: 2.5rem;
+  border: 1px solid rgb(209, 207, 207);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail__quantity h6 {
+  font-size: 1.1rem;
+  padding-left: 1.5rem;
+  color: var(--small-text-color);
+  text-transform: uppercase;
+  margin-right: 3rem;
+}
+
+.detail__quantity span {
+  font-size: 1.2rem;
+}
+
+/* DESCRIPTION  */
+.description button {
+  padding: 20px 40px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 992px) {
+  .detail__info h1 {
+    font-size: 2rem;
+  }
+
+  .detail__info p {
+    font-size: 1.3rem;
+  }
+
+  .detail__info .detail__info-desc {
+    font-size: 1.05rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .detail__info h1 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .detail__info p {
+    font-size: 1.2rem;
+  }
+
+  .detail__info .detail__info-desc {
+    font-size: 1rem;
+  }
+
+  .description__desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .detail__images {
+    display: flex;
+  }
+
+  .detail__images img {
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .detail__images .big {
+    height: 350px;
+    object-fit: contain;
+  }
+
+  .detail__info h1 {
+    font-size: 1.5rem;
+  }
+
+  .detail__info p {
+    font-size: 1.1rem;
+  }
+
+  .detail__info .detail__info-desc {
+    font-size: 0.9rem;
+  }
+
+  .card-body h4 {
+    font-size: 1rem;
+  }
+
+  .description button {
+    padding: 10px 20px;
+  }
+
+  .description__desc {
+    font-size: 0.8rem;
+  }
+
+  .related p {
+    font-size: 0.8rem;
+  }
+}
